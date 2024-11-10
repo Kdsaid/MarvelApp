@@ -1,15 +1,59 @@
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+# Compiled Application Files
+*.apk
+*.aar
+*.aab
+*.ap_
+
+# Compiled DEX Files for ART/Dalvik VM
+*.dex
+
+# Java Class Files
+*.class
+
+# Generated Build Folders
+bin/
+gen/
+out/
+build/
+
+# Uncomment if you don't need release build files
+# release/
+
+# Gradle-specific Files
+.gradle/
+
+# Local Configuration (e.g., SDK Path, etc.)
 local.properties
+
+# Proguard Directory for Code Obfuscation
+proguard/
+
+# Log Files
+*.log
+
+# Android Studio Temporary and Navigation Files
+.navigation/
+
+# Android Studio/IntelliJ Project Files
+*.iml
+.idea/deploymentTargetSelector.xml
+.idea/deploymentTargetDropDown.xml
+.idea/misc.xml
+.idea/inspectionProfiles
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/assetWizardSettings.xml
+.idea/dictionaries
+.idea/libraries
+.idea/caches
+.idea/modules.xml
+.idea/navEditor.xml
+.idea/other.xml
+
+# External Native Build Folder (for C++ Projects)
+.externalNativeBuild/
+.cxx/
+
+# Version Control Config File
+vcs.xml
