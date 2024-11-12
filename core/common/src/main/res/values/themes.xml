@@ -1,0 +1,17 @@
+<resources>
+
+    <style name="Theme.MarvelCompose" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorAccent">@color/secondary</item>
+        <item name="android:statusBarColor">@color/ribbon_700</item>
+    </style>
+
+    <style name="Theme.MarvelCompose.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.MarvelCompose.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.MarvelCompose.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

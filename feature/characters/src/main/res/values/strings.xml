@@ -1,0 +1,10 @@
+<resources>
+    <string name="characters">Characters</string>
+    <string name="details">Details</string>
+    <string name="description">Description</string>
+    <string name="name">NAME</string>
+    <string name="no_description">Sorry, there is no description for this character.</string>
+    <string name="no_comics_info">No Comics Info</string>
+    <string name="comics">Comics</string>
+    <string name="related_links">Related links</string>
+</resources>
