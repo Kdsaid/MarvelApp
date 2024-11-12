@@ -1,0 +1,16 @@
+<resources>
+    <string name="search">Search</string>
+    <string name="no_image">No Image</string>
+    <string name="retry">Retry</string>
+    <string name="no_results">No results</string>
+    <string name="no_more_results">There are no more results</string>
+    <string name="error_data_message">Could not get the data</string>
+    <string name="show_details">Show Details</string>
+    <string name="search_hint">Text to search. I.e.: ironman</string>
+    <string name="search_text">Text to search</string>
+    <string name="search_close">Close search</string>
+    <string name="search_clear">Clear search</string>
+    <string name="go_back">Go Back</string>
+    <string name="app_name">MarvelApp</string>
+
+</resources>
