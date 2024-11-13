@@ -6,7 +6,7 @@
     <color name="skin_400">#FFffa7a7</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="primary">@color/ribbon_500</color>
+    <color name="primary">@color/black</color>
     <color name="primary_variant">@color/ribbon_700</color>
     <color name="secondary">@color/skin_400</color>
     <color name="secondary_variant">@color/skin_200</color>

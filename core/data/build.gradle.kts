@@ -56,6 +56,8 @@ android {
 }
 
 dependencies {
+
+    testImplementation(project(":core:test_library"))
     implementation(libs.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -83,4 +85,7 @@ dependencies {
     androidTestImplementation(libs.espresso.core)
     testImplementation(libs.androidx.core.testing)
 
+}
+tasks.withType<Test> {
+    useJUnitPlatform()
 }

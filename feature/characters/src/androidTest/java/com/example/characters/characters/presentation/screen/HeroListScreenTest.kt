@@ -1,0 +1,53 @@
+package com.example.characters.characters.presentation.screen
+
+import androidx.compose.ui.test.junit4.createComposeRule
+import org.junit.Rule
+import org.junit.Test
+
+class HeroListScreenTest {
+    @get:Rule
+    val composeTestRule = createComposeRule()
+
+    @Test
+    fun whenScreenIsLoadedItShouldShowTheListOfCharacters() {
+        heroListRobot {
+        } verify {
+            characterIsDisplayed("character 1")
+        }
+    }
+
+    @Test
+    fun whenMagnifierTappedItShowsSearchTextInput() {
+        heroListRobot {
+            onMagnifierTapped()
+        } verify {
+            searchIsDisplayed()
+        }
+    }
+
+    @Test
+    fun whenCharacterIsSearchedItsShownInSearchTextInput() {
+        heroListRobot {
+            onCharacterSearched("searchText")
+        } verify {
+            textIsSearched("searchText")
+        }
+    }
+
+    @Test
+    fun withoutASwipeUpEndReachedIsNotInvoked() {
+        heroListRobot {
+        } verify {
+            endIsNotReached()
+        }
+    }
+
+    @Test
+    fun whenASwipeUpIsPerformedEndReachedIsInvoked() {
+        heroListRobot {
+            scrollBottom()
+        } verify {
+            endIsReached()
+        }
+    }
+}

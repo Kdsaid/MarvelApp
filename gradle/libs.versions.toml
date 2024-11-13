@@ -41,6 +41,7 @@ ui-tooling-preview-android = "1.7.5"
 test-core = "1.6.1"
 junit = "4.13.2"
 junit-version = "1.2.1"
+identity-doctypes-jvm = "202411.1"
 
 [libraries]
 compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "compose-bom" }
@@ -105,6 +106,7 @@ shot = { module = "com.karumi:shot", version.ref = "shot" }
 androidx-ui-tooling-preview-android = { group = "androidx.compose.ui", name = "ui-tooling-preview-android", version.ref = "ui-tooling-preview-android" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junit-version" }
+identity-doctypes-jvm = { group = "com.android.identity", name = "identity-doctypes-jvm", version.ref = "identity-doctypes-jvm" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
