@@ -43,14 +43,27 @@ android {
     }
     buildFeatures {
         compose = true
-    }
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
+        buildConfig = true
     }
     packaging {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
+            excludes += "META-INF/LICENSE*"
         }
+    }
+    testOptions {
+        unitTests {
+            isReturnDefaultValues = true
+        }
+    }
+
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+    kotlinOptions {
+        jvmTarget = "17"
     }
 }
 
@@ -109,4 +122,8 @@ dependencies {
     debugImplementation(libs.glance.preview)
     debugImplementation(libs.glance.appwidget.preview)
     debugImplementation(libs.glance.appwidget.host)
+}
+
+tasks.withType<Test> {
+    useJUnitPlatform()
 }
